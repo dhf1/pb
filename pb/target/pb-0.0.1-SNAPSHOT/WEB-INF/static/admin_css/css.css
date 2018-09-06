@@ -1,0 +1,627 @@
+td {
+	line-height: 18px;
+	color: #333333;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:#7BB6E7; /*背景*/
+	scrollbar-face-color: #C1D8F6;/*中间*/
+	scrollbar-highlight-color: #EEF5FD;/*左边*/
+	scrollbar-shadow-color: #FFFFFF;/*背景*/
+	scrollbar-3dlight-color: #EDF1F6;/*背景*/
+	scrollbar-arrow-color:  #EEF5FD;/*箭头*/
+	scrollbar-track-color: #EDF1F6;/*背景*/
+	scrollbar-darkshadow-color: #D0DDE6;/*右边*/
+	
+	
+	
+}
+
+
+a:visited {
+	color: #333333;
+	text-decoration: none;
+
+}
+a:hover {
+	text-decoration: underline;
+	color: #0033CC;
+
+}
+a:link {
+	text-decoration: none;
+	color: #333333;
+
+}
+.time {
+	font-family: "Arial";
+	font-size: 10px;
+	color: #AAAAAA;
+}
+
+.white {
+	color: #FFFFFF;
+}
+
+.title {
+	font-family: "宋体";
+	font-size: 14px;
+}
+.gray {
+	color: #999999;
+}
+.left14 {
+	font-size: 14px;
+	color: #000000;
+	font-weight: bold;
+	font-family: "微软雅黑";}
+.hand {
+	CURSOR:hand
+}
+li {
+	line-height: 25px;
+}
+
+.kk {
+	border: 1px solid #CCCCCC;
+
+}
+.leftzx {
+	border-left: 1px solid #E4EDF9;
+}
+hr {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+	height: 1px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.kk_white {
+	border: 1px solid #FFFFFF;
+}
+
+
+.bg_q {
+	border: 1px solid #9FCDEC;
+}
+
+.xux {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #E4EDF9;
+}
+.book_hs {
+	color: #FFFFFF;
+	background-color: #FF3300;
+	height: 18px;
+	padding-right: 3px;
+	padding-left: 3px;
+		CURSOR:hand;
+}
+.book_kk {
+	color: #FFFFFF;
+	background-color: #009900;
+	height: 18px;
+	padding-right: 3px;
+	padding-left: 3px;
+		CURSOR:hand;
+}
+.book_ds {
+	color: #FFFFFF;
+	background-color: #333333;
+	height: 18px;
+	padding-right: 3px;
+	padding-left: 3px;
+		CURSOR:hand;
+}
+
+
+.z {
+	padding: 6px;
+	line-height: 23px;
+}
+.zfb {
+	background-color: #FFFFCC;
+	border: 1px solid #FFCC33;
+	padding-top: 2px;
+	padding-right: 5px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+}
+.shuoming {
+	font-size: 12px;
+	color: #666666;
+	background-color: #FFFFE8;
+	border: 1px solid #FFCC99;
+	background-image: url(../images/help.png);
+	background-position: 5px;
+	padding-top: 3px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	padding-left: 25px;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+}
+
+.by {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+}
+
+
+.nzcms_table_top {
+	background-image: url(../images/nzcms_top01.gif);
+	height: 40px;
+	padding-top: 5px;
+	color: #000000;
+	font: bold 14px "微软雅黑";
+}
+
+.nzcms_table_top_h { /*当点到时显示样式*/
+	background-image: url(../images/nzsoft_14.gif);
+	height: 40px;
+	padding-top: 5px;
+	color: #000000;
+	font: bold 14px "微软雅黑";
+	background-position: 100px;
+}
+
+.nzcms_table_top2 {
+	background-image: url(../images/sort_bg.gif);
+	background-color: #C9DEFA;
+	background-repeat: repeat;
+	font-family: "微软雅黑";
+}
+.nzcms_end {
+	background-image: url(../images/end.gif);
+	background-repeat: repeat;
+	background-color: #D1E2F9;
+}
+.dingtiao_title {/*  字12*/
+	font-size: 24px;
+	font-family: "微软雅黑";
+	line-height: 26px;
+	color: #FF0000;
+	font-weight: bold;
+}
+.dingtiao_info {/*  字12*/
+	font-size: 14px;
+	font-family: "微软雅黑";
+	line-height: 20px;
+}
+.p12 {/*  字12*/
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 22px;
+}
+
+.p12B {/*  字12粗*/
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.p13 {/*  字13*/
+	font-size: 13px;
+	line-height: 28px;
+}
+
+
+.p13B {/*  字13*/
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 28px;
+}
+.p14 {/*  字14*/
+	font-size: 14px;
+	line-height: 28px;
+	
+}
+
+.p14B {/*  字14粗*/
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.p16 {/*  字16粗*/
+	font-size: 16px;
+	line-height: 28px;
+
+}
+
+.p16B {/*  字16粗*/
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+.p18 {/*  字18粗*/
+	font-size: 18px;
+	line-height: 28px;
+}
+
+.p18B {/*  字16粗*/
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 28px;
+}
+
+
+.p24 {/*  字24粗*/
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 45px;
+	font-family: "宋体";
+	color: #000000;
+}	
+
+.p28 {/*  字24粗*/
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 45px;
+	font-family: "宋体";
+	color: #000000;
+	
+}input {
+	height: 26px;
+	padding-top: 3px;
+	padding-right: 6px;
+	padding-bottom: 8px;
+	padding-left: 6px;
+	font-family: "宋体";
+	font-size: 14px;
+}
+	/*	这里是LEFT链接 */
+
+
+a.left2:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+a.left2:hover {
+	color: #E4EDF9;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+a.left2:link {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+	/*	这里是LEFT链接 */
+
+
+a.left3:visited {
+	text-decoration: none;
+	font-size: 12px;
+	padding-left: 40px;
+}
+a.left3:hover {
+	text-decoration: none;
+	font-size: 12px;
+	color: #990000;
+	padding-left: 40px;
+}
+a.left3:link {
+	text-decoration: none;
+	font-size: 12px;
+	padding-left: 40px;
+}
+
+/* -----------------------------------------------------------
+ 这里开始白色字的属性
+ 
+*/
+
+.white {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 22px;
+}
+.white10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #6CAFE2;
+}
+
+.white12B { 
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+
+}
+.white14 {
+	color: #FFFFFF;
+	font-size: 14px;
+
+}
+.white14B {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.white18 {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.white18B {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+}
+.white24 {
+	color: #FFFFFF;
+	font-size: 24px;
+
+}
+.white24B {
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: bold;
+
+/* -----------------------------------------------------------
+ 这里开始红色字的属性
+ 
+*/
+
+}
+.red {
+	font-size: 12px;
+	color: #FF0000;
+}
+.red12B {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+
+}
+.red14 {
+	font-size: 14px;
+	color: #FF0000;
+}
+.red14B {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.red18 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0000;
+	font-family: "微软雅黑";
+}
+.red24 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF0000;
+	font-family: "微软雅黑";
+}
+.red_huang {
+	font-size: 12px;
+	color: #FA5812;
+}
+.red_huang12B {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FA5812;
+
+}
+.red_huang14 {
+	font-size: 14px;
+	color: #FA5812;
+}
+.red_huang14B {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FA5812;
+}
+.red_huang18 {
+	font-size: 18px;
+	color: #FA5812;
+	font-family: "微软雅黑";
+}
+.red_huang18b {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FA5812;
+	font-family: "微软雅黑";
+}
+.red_huang24 {
+	font-size: 24px;
+	color: #FA5812;
+	font-family: "微软雅黑";
+}
+.red_huang24B {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FA5812;
+	font-family: "微软雅黑";
+}
+.red_hong {
+	font-size: 12px;
+	color: #CC0000;
+}
+.red_hong12B {
+	font-size: 12px;
+	font-weight: bold;
+	color: #CC0000;
+
+}
+.red_hong14 {
+	font-size: 14px;
+	color: #CC0000;
+}
+.red_hong14B {
+	font-size: 14px;
+	font-weight: bold;
+	color: #CC0000;
+}
+.red_hong18 {
+	font-size: 18px;
+	color: #CC0000;
+	font-family: "微软雅黑";
+}
+.red_hong18b {
+	font-size: 18px;
+	font-weight: bold;
+	color: #CC0000;
+	font-family: "微软雅黑";
+}
+.red_hong24 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #CC0000;
+	font-family: "微软雅黑";
+}
+
+.title10 {
+	font-size: 11px;
+	color: #BBBBBB;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.title12 {
+	font-size: 12px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+
+.title12B {
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.title14 {
+	font-size: 14px;
+	color: #666666;
+	font-family: "微软雅黑";
+	
+
+}
+
+.title14b {
+	font-size: 14px;
+	color: #666666;
+	font-family: "微软雅黑";
+	font-weight: bold;
+
+}
+
+.title18 {
+	font-size: 18px;
+	color: #666666;
+	font-family: "微软雅黑";
+
+}
+
+.title18B {
+	font-size: 18px;
+	color: #666666;
+	font-family: "微软雅黑";
+	font-weight: bold;
+
+}
+
+.title24 {
+	font-size: 24px;
+	color: #666666;
+	font-family: "微软雅黑";
+	
+}
+
+.title30 {
+	font-size: 30px;
+	color: #666666;
+	font-family: "微软雅黑";
+	
+	
+
+/* -----------------------------------------------------------
+ 这里开始链接文字性*/
+
+
+
+}
+.ls12 {
+	font-size: 12px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+
+}
+.ls12B {
+	font-size: 12px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.ls14 {
+	font-size: 14px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+
+}
+.ls14B {
+	font-size: 14px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.ls16 {
+	font-size: 16px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+
+}
+.ls16B {
+	font-size: 16px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.ls18 {
+	font-size: 18px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+
+}
+.ls18B {
+	font-size: 18px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.ls24 {
+	font-size: 24px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+
+}
+.ls24B {
+	font-size: 24px;
+	color: #223A9D;
+	font-family: "微软雅黑";
+	font-weight: bold;
+}
+.admin_input {
+	font: 16px/25px "微软雅黑";
+	height: 40px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+/*后台CSS代码结束*/

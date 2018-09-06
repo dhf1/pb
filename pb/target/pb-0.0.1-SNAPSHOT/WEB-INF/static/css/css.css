@@ -1,0 +1,454 @@
+@CHARSET "UTF-8";
+td {
+	font-family: "宋体";
+	color: #333333;
+	font-size: 14px;
+	font-weight: normal;
+
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+	background-attachment: scroll;
+	background-image: url(/static/images/nzcms_bg.jpg);
+	background-repeat: repeat-x;
+	background-position: center top;
+}
+
+a:visited {
+	color: #333333;
+	text-decoration: none;
+
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF0000;
+
+}
+a:link {
+	text-decoration: none;
+	color: #333333;
+
+
+}
+
+.p12 {/*  字12*/
+	font-size: 12px;
+	font-family: "宋体";
+}
+
+.p12B {/*  字12粗*/
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.p13 {/*  字13*/
+	font-size: 13px;
+}
+
+
+.p13B {/*  字13*/
+	font-size: 13px;
+}
+.p14 {/*  字14*/
+	font-size: 14px;
+	
+}
+
+.p14B {/*  字14粗*/
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.p16 {/*  字16粗*/
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #666666;
+}
+
+.p16b {/*  字16粗*/
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.p18 {/*  字18粗*/
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+.p18B {/*  字18粗*/
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+
+.p24 {/*  字24粗*/
+	font-size: 24px;
+	font-family: "微软雅黑";
+}
+
+.p24B {/*  字24粗*/
+	font-size: 24px;
+	font-weight: bold;
+	font-family: "宋体";
+/* -----------------------------------------------------------
+ 这里开始白色字的属性
+ 
+*/
+}
+.white {
+	color: #FFFFFF;
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 22px;
+}
+.white10 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #F15F5F;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.white12B { 
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+
+}
+.white14 {
+	color: #FFFFFF;
+	font-size: 14px;
+
+}
+.white14B {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.white18 {
+	color: #FFFFFF;
+	font-size: 18px;
+}
+.white18B {
+	color: #FFFFFF;
+	font-size: 18px;
+	font-weight: bold;
+}
+.white24 {
+	color: #FFFFFF;
+	font-size: 24px;
+
+}
+.white24B {
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: bold;
+
+/* -----------------------------------------------------------
+ 这里开始红色字的属性
+ 
+*/
+
+}
+.red {
+	font-size: 12px;
+	color: #FF0000;
+}
+.red12B {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF0000;
+
+}
+.red14 {
+	font-size: 14px;
+	color: #FF0000;
+}
+.red14B {
+	font-size: 14px;
+	font-weight: bold;
+	color: #FF0000;
+}
+.red18 {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FF0000;
+	font-family: "微软雅黑";
+}
+.red24 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #FF0000;
+	font-family: "微软雅黑";
+
+}
+
+.title10 {
+	font-size: 11px;
+	color: #BBBBBB;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.title12 {
+	font-size: 12px;
+	color: #666666;
+	font-family: "微软雅黑";
+}
+
+.title12B {
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+}
+
+.title14 {
+	font-size: 14px;
+	color: #666666;
+	font-family: "微软雅黑";
+	
+
+}
+
+.title14b {
+	font-size: 14px;
+	color: #666666;
+	font-family: "微软雅黑";
+	font-weight: bold;
+
+}
+
+.title18 {
+	font-size: 18px;
+	color: #666666;
+	font-family: "微软雅黑";
+
+}
+
+.title18B {
+	font-size: 18px;
+	color: #666666;
+	font-family: "微软雅黑";
+	font-weight: bold;
+
+}
+
+.title24 {
+	font-size: 24px;
+	color: #666666;
+	font-family: "微软雅黑";
+	
+}
+
+.title30 {
+	font-size: 30px;
+	color: #000000;
+	font-family: "微软雅黑";
+	
+	
+	
+}
+hr {
+	height: 1px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.zbout {
+	line-height: 26px;
+	font-size: 14px;
+table-layout:fixed;
+word-break:break-all
+
+}
+.end {
+	line-height: 25px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+}
+
+
+.kk2 {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FD9947;
+	border-right-color: #FD9947;
+	border-bottom-color: #FD9947;
+	border-left-color: #FD9947;
+
+}
+.bg_qc {
+	border: 1px solid #CCCCCC;
+}
+
+
+.kk22 {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+	border-top-color: #999999;
+}
+
+.kk {
+	border: 1px solid #C85919;
+}
+.kk_white10 {
+	border-top-width: 10px;
+	border-right-width: 10px;
+	border-bottom-width: 0px;
+	border-left-width: 10px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+.kk_white10_2 {
+	border-top-width: 0px;
+	border-right-width: 10px;
+	border-bottom-width: 0px;
+	border-left-width: 10px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+.kk_white10_3 {
+	border-top-width: 0px;
+	border-right-width: 6px;
+	border-bottom-width: 0px;
+	border-left-width: 6px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+
+.dx {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #EBEBEB;
+	border-right-color: #EBEBEB;
+	border-left-color: #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+}
+.topz {
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	height: 19px;
+	width: 67px;
+	text-decoration: none;
+	background-image: url(../images/top_tb.gif);
+	padding: 3px;
+}
+
+.z {
+	line-height: 30px;
+	table-layout:fixed;
+	word-break:break-all;
+	font-size: 16px;
+
+
+}
+a.left:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+		font-size: 16px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+a.left:hover {
+	color: #FFFF00;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+a.left:active {
+	color: #FFFF00;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+a.left:link {
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	
+	/*	这里是LEFT链接 */
+}
+.book_kk {/* 留言审核字*/
+	height: 16px;
+	padding: 2px;
+	color: #FFFFFF;
+	background-color: #0F96E5;
+	font-family: "宋体";
+}
+.book_hs {/* 留言审核字*/
+	height: 16px;
+	padding: 2px;
+	color: #FFFFFF;
+	background-color: #F27D03;
+	font-family: "宋体";
+}.zfb {
+	border: 1px dashed #FF6600;
+	padding: 3px;
+	background: #FFFFCC;
+}
+	
+/* -----------------------------------------------------------
+ 这里开始底部属性
+ 
+*/
+	
+.end { /*  默认字体色彩*/
+	font-size: 14px;
+	line-height: 25px;
+	font-family: "微软雅黑";
+	background-attachment: scroll;
+	background-color: #FFFFFF;
+	background-image: url(../images/nzcms/end_bg.gif);
+	background-repeat: repeat-x;
+	background-position: center top;
+}	
+.i_title {
+	font-size: 18px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #CC0000;
+	font-weight: bold;
+	font-family: "微软雅黑";
+}
+.i_title2 {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hades.dao.mapper.PbSettingMapper">
+  <resultMap id="BaseResultMap" type="com.hades.pojo.PbSetting">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pb_switch" jdbcType="BIT" property="pbSwitch" />
+    <result column="pb_close_display" jdbcType="VARCHAR" property="pbCloseDisplay" />
+    <result column="pb_title" jdbcType="VARCHAR" property="pbTitle" />
+    <result column="pb_keyword" jdbcType="VARCHAR" property="pbKeyword" />
+    <result column="pb_describe" jdbcType="VARCHAR" property="pbDescribe" />
+    <result column="pb_bottom" jdbcType="VARCHAR" property="pbBottom" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, pb_switch, pb_close_display, pb_title, pb_keyword, pb_describe, pb_bottom
+  </sql>
+  <select id="selectByExample" parameterType="com.hades.pojo.PbSettingExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from pb_setting
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from pb_setting
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from pb_setting
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.hades.pojo.PbSettingExample">
+    delete from pb_setting
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.hades.pojo.PbSetting">
+    insert into pb_setting (id, pb_switch, pb_close_display, 
+      pb_title, pb_keyword, pb_describe, 
+      pb_bottom)
+    values (#{id,jdbcType=INTEGER}, #{pbSwitch,jdbcType=BIT}, #{pbCloseDisplay,jdbcType=VARCHAR}, 
+      #{pbTitle,jdbcType=VARCHAR}, #{pbKeyword,jdbcType=VARCHAR}, #{pbDescribe,jdbcType=VARCHAR}, 
+      #{pbBottom,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.hades.pojo.PbSetting">
+    insert into pb_setting
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="pbSwitch != null">
+        pb_switch,
+      </if>
+      <if test="pbCloseDisplay != null">
+        pb_close_display,
+      </if>
+      <if test="pbTitle != null">
+        pb_title,
+      </if>
+      <if test="pbKeyword != null">
+        pb_keyword,
+      </if>
+      <if test="pbDescribe != null">
+        pb_describe,
+      </if>
+      <if test="pbBottom != null">
+        pb_bottom,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="pbSwitch != null">
+        #{pbSwitch,jdbcType=BIT},
+      </if>
+      <if test="pbCloseDisplay != null">
+        #{pbCloseDisplay,jdbcType=VARCHAR},
+      </if>
+      <if test="pbTitle != null">
+        #{pbTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="pbKeyword != null">
+        #{pbKeyword,jdbcType=VARCHAR},
+      </if>
+      <if test="pbDescribe != null">
+        #{pbDescribe,jdbcType=VARCHAR},
+      </if>
+      <if test="pbBottom != null">
+        #{pbBottom,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.hades.pojo.PbSettingExample" resultType="java.lang.Long">
+    select count(*) from pb_setting
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update pb_setting
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.pbSwitch != null">
+        pb_switch = #{record.pbSwitch,jdbcType=BIT},
+      </if>
+      <if test="record.pbCloseDisplay != null">
+        pb_close_display = #{record.pbCloseDisplay,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pbTitle != null">
+        pb_title = #{record.pbTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pbKeyword != null">
+        pb_keyword = #{record.pbKeyword,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pbDescribe != null">
+        pb_describe = #{record.pbDescribe,jdbcType=VARCHAR},
+      </if>
+      <if test="record.pbBottom != null">
+        pb_bottom = #{record.pbBottom,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update pb_setting
+    set id = #{record.id,jdbcType=INTEGER},
+      pb_switch = #{record.pbSwitch,jdbcType=BIT},
+      pb_close_display = #{record.pbCloseDisplay,jdbcType=VARCHAR},
+      pb_title = #{record.pbTitle,jdbcType=VARCHAR},
+      pb_keyword = #{record.pbKeyword,jdbcType=VARCHAR},
+      pb_describe = #{record.pbDescribe,jdbcType=VARCHAR},
+      pb_bottom = #{record.pbBottom,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.hades.pojo.PbSetting">
+    update pb_setting
+    <set>
+      <if test="pbSwitch != null">
+        pb_switch = #{pbSwitch,jdbcType=BIT},
+      </if>
+      <if test="pbCloseDisplay != null">
+        pb_close_display = #{pbCloseDisplay,jdbcType=VARCHAR},
+      </if>
+      <if test="pbTitle != null">
+        pb_title = #{pbTitle,jdbcType=VARCHAR},
+      </if>
+      <if test="pbKeyword != null">
+        pb_keyword = #{pbKeyword,jdbcType=VARCHAR},
+      </if>
+      <if test="pbDescribe != null">
+        pb_describe = #{pbDescribe,jdbcType=VARCHAR},
+      </if>
+      <if test="pbBottom != null">
+        pb_bottom = #{pbBottom,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.hades.pojo.PbSetting">
+    update pb_setting
+    set pb_switch = #{pbSwitch,jdbcType=BIT},
+      pb_close_display = #{pbCloseDisplay,jdbcType=VARCHAR},
+      pb_title = #{pbTitle,jdbcType=VARCHAR},
+      pb_keyword = #{pbKeyword,jdbcType=VARCHAR},
+      pb_describe = #{pbDescribe,jdbcType=VARCHAR},
+      pb_bottom = #{pbBottom,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=src/main/webapp/WEB-INF/static/js,src/main/webapp/WEB-INF/static/rili.html,src/main/webapp/WEB-INF/views,src/main/webapp/WEB-INF/static/html/rili.html,src/main/webapp/WEB-INF/static/kindeditor
+validator.Unchecked=
